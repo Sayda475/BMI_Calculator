@@ -25,7 +25,7 @@ namespace BMI_Calculator
             Application.SetCompatibleTextRenderingDefault(false);
             splashTimerForm = new SplashTimerForm();
             bmiCalculator = new BMICalculator();
-            Application.Run(bmiCalculator);
+            Application.Run(splashTimerForm);
         }
     }
 }
