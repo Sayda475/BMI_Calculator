@@ -108,12 +108,11 @@ namespace BMI_Calculator
 
         private void DisplayCondition()
         {
-            BMI_Progress_Bar.Maximum = 4;
 
             if (_BMI <= 18.5)
             {
                 BMI_Progress_Bar.ForeColor = Color.Wheat;
-                BMI_Progress_Bar.Value += 1;
+                BMI_Progress_Bar.Value = 25;
                 Condition_Text_Box.Text = "Underweight";
                 Condition_Text_Box.ForeColor = Color.Wheat;
                 Condition_Text_Box.Font = new Font(this.Font, FontStyle.Bold);
@@ -122,7 +121,7 @@ namespace BMI_Calculator
             {
                 BMI_Progress_Bar.ForeColor = Color.DarkSeaGreen;
                 Condition_Text_Box.Text = "Normal";
-                BMI_Progress_Bar.Value += 2;
+                BMI_Progress_Bar.Value = 50;
                 Condition_Text_Box.ForeColor = Color.DarkSeaGreen;
                 Condition_Text_Box.Font = new Font(this.Font, FontStyle.Bold);
             }
@@ -130,7 +129,7 @@ namespace BMI_Calculator
             {
                 BMI_Progress_Bar.ForeColor = Color.SandyBrown;
                 Condition_Text_Box.Text = "Overweight";
-                BMI_Progress_Bar.Value += 3;
+                BMI_Progress_Bar.Value = 75;
                 Condition_Text_Box.ForeColor = Color.SandyBrown;
                 Condition_Text_Box.Font = new Font(this.Font, FontStyle.Bold);
             }
@@ -138,7 +137,7 @@ namespace BMI_Calculator
             {
                 BMI_Progress_Bar.ForeColor = Color.Tomato;
                 Condition_Text_Box.Text = "Obese";
-                BMI_Progress_Bar.Value += 4;
+                BMI_Progress_Bar.Value = 100;
                 Condition_Text_Box.ForeColor = Color.Tomato;
                 Condition_Text_Box.Font = new Font(this.Font, FontStyle.Bold);
             }

@@ -62,6 +62,7 @@
             this.Name = "SplashTimerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashTimer";
+            this.Load += new System.EventHandler(this.SplashTimerForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
