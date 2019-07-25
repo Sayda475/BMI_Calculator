@@ -27,11 +27,12 @@ namespace BMI_Calculator
             SplashTimer.Enabled = true;
         }
 
-        private void Splash_Timer_Tick(object sender, EventArgs e)
+        private void SplashTimer_Tick(object sender, EventArgs e)
         {
             SplashTimer.Enabled = false;
             Program.bmiCalculator.Show();
-            Program.splashTimerForm.Hide();
+            Program.splashTimerForm.Close();
+            this.Hide();
         }
     }
 }

@@ -13,12 +13,11 @@ namespace BMI_Calculator
 {
     static class Program
     {
-        public static SplashTimerForm splashTimerForm;
-        public static BMICalculator bmiCalculator;
- 
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        public static SplashTimerForm splashTimerForm;
+        public static BMICalculator bmiCalculator;
         [STAThread]
         static void Main()
         {
@@ -26,7 +25,7 @@ namespace BMI_Calculator
             Application.SetCompatibleTextRenderingDefault(false);
             splashTimerForm = new SplashTimerForm();
             bmiCalculator = new BMICalculator();
-            Application.Run(splashTimerForm);
+            Application.Run(new SplashTimerForm());
         }
     }
 }
