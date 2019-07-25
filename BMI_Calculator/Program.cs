@@ -3,11 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/* BMI Calculator
+ * Author: Sayda Rahman
+ * ID# 301042327
+ * Last modified: July 24, 2019
+ * Description: COMP123 Assignment4- calculation of BMI by using imperial or metric units.
+ */
 namespace BMI_Calculator
 {
     static class Program
     {
+        public static SplashTimerForm splashTimerForm;
+        public static BMICalculator bmiCalculator;
+ 
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +24,9 @@ namespace BMI_Calculator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            splashTimerForm = new SplashTimerForm();
+            bmiCalculator = new BMICalculator();
+            Application.Run(splashTimerForm);
         }
     }
 }
