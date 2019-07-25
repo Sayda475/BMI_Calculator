@@ -31,7 +31,6 @@ namespace BMI_Calculator
         {
             SplashTimer.Enabled = false;
             Program.bmiCalculator.Show();
-            Program.splashTimerForm.Close();
             this.Hide();
         }
     }

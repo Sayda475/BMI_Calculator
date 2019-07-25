@@ -21,11 +21,11 @@ namespace BMI_Calculator
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             splashTimerForm = new SplashTimerForm();
             bmiCalculator = new BMICalculator();
-            Application.Run(new SplashTimerForm());
+            Application.Run(bmiCalculator);
         }
     }
 }
