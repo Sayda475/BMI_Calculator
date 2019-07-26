@@ -10,7 +10,7 @@ using System.Windows.Forms;
 /* BMI Calculator
  * Author: Sayda Rahman
  * ID# 301042327
- * Last modified: July 24, 2019
+ * Last modified: July 25, 2019
  * Description: COMP123 Assignment4- calculation of BMI by using imperial or metric units.
  */
 namespace BMI_Calculator
@@ -21,12 +21,20 @@ namespace BMI_Calculator
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// This is the event handler for the SplashTimerForm load event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SplashTimerForm_Load(object sender, EventArgs e)
         {
             SplashTimer.Enabled = true;
         }
-
+        /// <summary>
+        /// This is the event handler for the Tick event of SplashTimer and hide SplashTimerForm and show bmiCalculator
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SplashTimer_Tick(object sender, EventArgs e)
         {
             SplashTimer.Enabled = false;

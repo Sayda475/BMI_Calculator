@@ -10,7 +10,7 @@ using System.Windows.Forms;
 /* BMI Calculator
  * Author: Sayda Rahman
  * ID# 301042327
- * Last modified: July 24, 2019
+ * Last modified: July 25, 2019
  * Description: COMP123 Assignment4- calculation of BMI by using imperial or metric units.
  */
 namespace BMI_Calculator
@@ -20,7 +20,6 @@ namespace BMI_Calculator
         private double _Height { get; set; }
         private double _Weight { get; set; }
         private double _BMI { get; set; }
-        //private double _BMI_Level { get; set; }
         public BMICalculator()
         {
             InitializeComponent();
@@ -49,7 +48,7 @@ namespace BMI_Calculator
             Result_Text_Box.Text = string.Empty;
         }
         /// <summary>
-        /// This is the event handler for CalculateButton click event
+        /// This is the event handler for CalculateButton click event to display the calculation of BMI 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -102,10 +101,12 @@ namespace BMI_Calculator
             Weight_Text_Box.Text = string.Empty;
             Result_Text_Box.Text = string.Empty;
             Condition_Text_Box.Text = string.Empty;
-            Condition_Text_Box.BackColor = Color.Black;
+            Condition_Text_Box.BackColor = Color.MistyRose;
             BMI_Progress_Bar.Value = 0;
         }
-
+        /// <summary>
+        /// This is the method to show conditon text and color on progress bar
+        /// </summary>
         private void DisplayCondition()
         {
 
@@ -114,7 +115,7 @@ namespace BMI_Calculator
                 BMI_Progress_Bar.ForeColor = Color.Wheat;
                 BMI_Progress_Bar.Value = 25;
                 Condition_Text_Box.Text = "Underweight";
-                Condition_Text_Box.ForeColor = Color.Wheat;
+                Condition_Text_Box.ForeColor = Color.Orange;
                 Condition_Text_Box.Font = new Font(this.Font, FontStyle.Bold);
             }
             else if (_BMI <= 24.9)

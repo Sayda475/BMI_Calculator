@@ -77,6 +77,9 @@
             // 
             // Height_Text_Box
             // 
+            this.Height_Text_Box.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Height_Text_Box.Location = new System.Drawing.Point(155, 3);
             this.Height_Text_Box.Name = "Height_Text_Box";
             this.Height_Text_Box.Size = new System.Drawing.Size(84, 38);
@@ -85,6 +88,9 @@
             // 
             // Weight_Text_Box
             // 
+            this.Weight_Text_Box.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Weight_Text_Box.Location = new System.Drawing.Point(155, 44);
             this.Weight_Text_Box.Name = "Weight_Text_Box";
             this.Weight_Text_Box.Size = new System.Drawing.Size(84, 38);
@@ -196,6 +202,9 @@
             // 
             // Result_Text_Box
             // 
+            this.Result_Text_Box.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Result_Text_Box.ForeColor = System.Drawing.Color.DimGray;
             this.Result_Text_Box.Location = new System.Drawing.Point(92, 183);
             this.Result_Text_Box.Name = "Result_Text_Box";
@@ -214,19 +223,23 @@
             // 
             // Condition_Text_Box
             // 
-            this.Condition_Text_Box.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Condition_Text_Box.Location = new System.Drawing.Point(146, 261);
+            this.Condition_Text_Box.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Condition_Text_Box.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Condition_Text_Box.Location = new System.Drawing.Point(110, 261);
             this.Condition_Text_Box.Multiline = true;
             this.Condition_Text_Box.Name = "Condition_Text_Box";
-            this.Condition_Text_Box.Size = new System.Drawing.Size(144, 34);
+            this.Condition_Text_Box.Size = new System.Drawing.Size(182, 37);
             this.Condition_Text_Box.TabIndex = 12;
             // 
             // Condition_Label
             // 
             this.Condition_Label.AutoSize = true;
-            this.Condition_Label.Location = new System.Drawing.Point(17, 261);
+            this.Condition_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Condition_Label.Location = new System.Drawing.Point(-1, 264);
             this.Condition_Label.Name = "Condition_Label";
-            this.Condition_Label.Size = new System.Drawing.Size(129, 31);
+            this.Condition_Label.Size = new System.Drawing.Size(116, 29);
             this.Condition_Label.TabIndex = 13;
             this.Condition_Label.Text = "Condition";
             // 

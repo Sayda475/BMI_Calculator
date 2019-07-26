@@ -6,7 +6,7 @@ using System.Windows.Forms;
 /* BMI Calculator
  * Author: Sayda Rahman
  * ID# 301042327
- * Last modified: July 24, 2019
+ * Last modified: July 25, 2019
  * Description: COMP123 Assignment4- calculation of BMI by using imperial or metric units.
  */
 namespace BMI_Calculator
